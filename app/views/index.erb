@@ -1,0 +1,7 @@
+<h1>Welcome to the Magazine App</h1>
+<h2> Currently, there are <%= @articles.count %> Articles</h2>
+<hr>
+<% @articles.each do |article| %>
+    <h3><%= article.title %></h3>
+    <p><%= article.content %></p>
+<% end %>
